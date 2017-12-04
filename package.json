@@ -1,0 +1,31 @@
+{
+  "name": "vegansnackbar",
+  "version": "1.0.0",
+  "description": "My vegan website",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "metalsmith": "^2.3.0",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaKatheder/vegansnackbar.git"
+  },
+  "keywords": [
+    "vegan",
+    "blog"
+  ],
+  "author": "Julia Katheder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaKatheder/vegansnackbar/issues"
+  },
+  "homepage": "https://github.com/JuliaKatheder/vegansnackbar#readme"
+}
