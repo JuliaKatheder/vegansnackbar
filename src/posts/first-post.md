@@ -3,7 +3,7 @@ title: My First Post
 date: 2012-08-20
 layout: post.html
 image:
-    src:    http://www.loremimages.com?size=350x150
+    src:    http://placekitten.com/200/300
     alt:    Test
 ---
 
