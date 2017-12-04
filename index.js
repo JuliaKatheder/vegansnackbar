@@ -13,7 +13,7 @@ Metalsmith(__dirname)
   })
   .source('./src')
   .destination('./docs')
-  .clean(true)
+  .clean(false)
   .use(collections({
     posts: 'posts/*.md'
   }))
