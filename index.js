@@ -1,4 +1,5 @@
 var Metalsmith  = require('metalsmith');
+var collections = require('metalsmith-collections');
 var markdown    = require('metalsmith-markdown');
 var layouts     = require('metalsmith-layouts');
 var permalinks  = require('metalsmith-permalinks');
@@ -12,7 +13,10 @@ Metalsmith(__dirname)
   })
   .source('./src')
   .destination('./docs')
-  .clean(false)
+  .clean(true)
+  .use(collections({
+    posts: 'posts/*.md'
+  }))
   .use(markdown())
   .use(permalinks())
   .use(layouts({
