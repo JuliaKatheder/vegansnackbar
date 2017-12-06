@@ -4,12 +4,26 @@
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 {{#each collections.posts}}
 <div class="wrap">
   <div class="crop">
-    <img src="{{image.src}}" alt="{{image.alt}}">
+    <!--<img src="{{image.src}}" alt="{{image.alt}}">-->
+    <svg width="300px" height="300px">
+        <defs>
+          <clipPath id="top">
+            <polygon points="0 300, 300 300, 150 0" />
+          </clipPath>
+          <clipPath id="bottom">
+            <polygon points="0 0, 300 0, 150 300" />
+          </clipPath>
+        </defs>
+        <image xlink:href="{{image.src}}" x="0" y="0" height="300px" width="300px" clip-path="url(#top)"/>
+        <image xlink:href="{{image.src}}" x="0" y="0" height="300px" width="300px" clip-path="url(#bottom)"/>
+      </svg>
   </div>
 </div>
 {{/each}}

@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: calc(100vw + 300px);
+    margin-left: -150px;
+    background: black;
+}
+.wrap {
+    height: 300px;
+    width: 165px;
+    margin-bottom: 15px;
+}
+.wrap:nth-child(even) image[clip-path="url(#top)"]{
+    display: none;
+}
+.wrap:nth-child(odd) image[clip-path="url(#bottom)"]{
+    display: none;
+}
