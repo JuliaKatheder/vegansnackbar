@@ -11,19 +11,26 @@
 {{#each collections.posts}}
 <div class="wrap">
   <div class="crop">
-    <!--<img src="{{image.src}}" alt="{{image.alt}}">-->
     <svg width="300px" height="300px">
-        <defs>
+
           <clipPath id="top">
             <polygon points="0 300, 300 300, 150 0" />
           </clipPath>
           <clipPath id="bottom">
             <polygon points="0 0, 300 0, 150 300" />
           </clipPath>
-        </defs>
-        <image xlink:href="{{image.src}}" x="0" y="0" height="300px" width="300px" clip-path="url(#top)"/>
-        <image xlink:href="{{image.src}}" x="0" y="0" height="300px" width="300px" clip-path="url(#bottom)"/>
+
+        <polygon class="pointer-event top" points="0 300, 300 300, 150 0" />
+        <polygon class="pointer-event bottom" points="0 0, 300 0, 150 300" />
+        <image xlink:href="{{image.src}}" x="0" y="0" height="300px" preserveAspectRatio="xMinYMin slice" clip-path="url(#bottom)"/>
+        <image xlink:href="{{image.src}}" x="0" y="0" height="300px" preserveAspectRatio="xMinYMin slice" clip-path="url(#top)"/>
       </svg>
+  </div>
+  <div class="description">
+    <h2>Lorem ipsum</h2>
+    <p>
+        dolor sit amet, consectetur adipiscing elit. Vivamus lacus nisl, tempus at ligula at, malesuada consectetur justo. Fusce hendrerit turpis a ipsum tempor, ut iaculis nibh gravida.
+    </p>
   </div>
 </div>
 {{/each}}
