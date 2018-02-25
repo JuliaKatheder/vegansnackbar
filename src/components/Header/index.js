@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          VeganSnackbar
         </Link>
       </h1>
     </div>
