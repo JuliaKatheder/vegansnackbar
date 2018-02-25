@@ -1,0 +1,2 @@
+webpackJsonp([0xaf389d671f72],{330:function(a,e){a.exports={data:{markdownRemark:{html:"<p>This is semolina porridge!</p>",frontmatter:{title:"Breakfast | Semolina Porridge"}}},pathContext:{slug:"/semolina-porridge/"}}}});
+//# sourceMappingURL=path---semolina-porridge-db432d7649ce018bdfdc.js.map

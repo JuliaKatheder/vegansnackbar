@@ -4,13 +4,17 @@
       "component---src-pages-index-js-517c35727b7bc8c2b42f.js",
       "component---src-pages-index-js-517c35727b7bc8c2b42f.js.map"
     ],
+    "path---tasty-umami-sauce": [
+      "path---tasty-umami-sauce-4dab0722db4caa48eb8e.js",
+      "path---tasty-umami-sauce-4dab0722db4caa48eb8e.js.map"
+    ],
     "path---": [
-      "path----557518bd178906f8d58a.js",
-      "path----557518bd178906f8d58a.js.map"
+      "path----951a965bae880c576341.js",
+      "path----951a965bae880c576341.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-41cef3364244ba1c6cb0.js",
-      "component---src-layouts-index-js-41cef3364244ba1c6cb0.js.map"
+      "component---src-layouts-index-js-1e722add577809bd2cb7.js",
+      "component---src-layouts-index-js-1e722add577809bd2cb7.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
@@ -32,19 +36,27 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---semolina-porridge": [
+      "path---semolina-porridge-db432d7649ce018bdfdc.js",
+      "path---semolina-porridge-db432d7649ce018bdfdc.js.map"
+    ],
     "component---src-pages-page-2-js": [
       "component---src-pages-page-2-js-65f0147ecb0dc4da2a2b.js",
       "component---src-pages-page-2-js-65f0147ecb0dc4da2a2b.js.map"
     ],
     "app": [
-      "app-c256baad1567d4a69f4c.js",
+      "app-1795eb476cbc824e5b66.js",
       "build-js-styles.css",
-      "app-c256baad1567d4a69f4c.js.map",
+      "app-1795eb476cbc824e5b66.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-recipies-js": [
+      "component---src-templates-recipies-js-2b7c42a8173c320f4545.js",
+      "component---src-templates-recipies-js-2b7c42a8173c320f4545.js.map"
     ]
   }
 }
