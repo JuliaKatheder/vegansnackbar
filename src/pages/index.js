@@ -1,13 +1,44 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+class IndexPage extends Component {
+  render() {
+    const links = [];
+    console.log(this.props.data.allSitePage.edges.length)
+
+    this.props.data.allSitePage.edges
+      .filter(currNode => currNode.node.path.startsWith('/recipies'))
+      .forEach(currNode => {
+        links.push((
+          <article key={currNode.node.id} >
+            <Link to={currNode.node.path}>{currNode.node.jsonName}</Link>
+          </article>
+          ));
+      });
+
+    return (
+      <div>
+        <h1>The Recipies</h1>
+        {links}
+
+        <pre>{JSON.stringify(this.props, null, 3)}</pre>
+      </div>
+    );
+  }
+}
 
 export default IndexPage
+
+export const query = graphql`
+  query BlogPostsQuery {
+    allSitePage {
+      edges {
+        node {
+          id
+          path
+          jsonName
+        }
+      }
+    }
+  }
+`;

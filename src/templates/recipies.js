@@ -8,7 +8,9 @@ export default (obj) => {
       <Helmet
         title={post.frontmatter.title}
       />
-      <div>Hello RECIPY</div>
+      <div className="content" dangerouslySetInnerHTML={{__html: post.html}}></div>
+     
+     
       <pre>
       {JSON.stringify(obj, null, 2)}
       </pre>
