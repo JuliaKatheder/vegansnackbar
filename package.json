@@ -10,6 +10,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "particlesjs": "^2.2.2",
+    "react": "^16.4.1",
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.2.0"
   },
